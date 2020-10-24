@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from "react-router-dom";
 
 import {MenuItems} from './MenuItems'
 
@@ -15,7 +16,7 @@ function Navbar() {
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>
-              <a className={item.cName} href={item.url}>
+              <a className={item.cName} href={item.url} component={NavLink}>
                 {item.title}
               </a>
             </li>

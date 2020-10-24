@@ -1,0 +1,44 @@
+.left-content{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+.left-fixed {
+  position: fixed;
+}
+
+.left-logo{
+  margin-top: 0;
+  align-items: center;
+}
+
+.left-logo-img {
+  border-radius: 50%;
+  max-height: 150px;
+  max-width: 150px;
+  /* display: block; */
+}
+
+.left-name-header{
+  font-family: "Syne Mono";
+  letter-spacing: .2em;
+  color: #3c3b3b;
+  text-transform: uppercase;
+}
+
+.left-email {
+  margin-top: 10px;
+  font-family: "Raleway";
+  letter-spacing: .2em;
+  color: #757575;
+  font-size: 14px;
+}
+
+.horizontal-rule {
+  line-height: 200px;
+  padding-top: 20px;
+  border-bottom: solid 1px rgba(160,160,160,0.3);;
+  width: 50%;
+
+}

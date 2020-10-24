@@ -10,9 +10,9 @@
 
 .navbar-logo {
   justify-self: start;
-  margin-left: 4%;
+  margin-left: 2%;
   cursor: pointer;
-  letter-spacing: .25em;
+  letter-spacing: .1em;
   box-sizing: border-box;
   font-family: 'Tangerine', serif;
   font-size: 36px;
@@ -42,7 +42,7 @@ ul li:not(:last-child):after {
   color:  rgba(160,160,160,0.3);
 }
 
-a:link, a:visited {
+.nav-menu a:link, a:visited {
   color: black;
   padding: 14px 25px;
   text-align: center;
@@ -50,7 +50,7 @@ a:link, a:visited {
   display: inline-block;
 }
 
-a:hover, a:active {
+.nav-menu a:hover, a:active {
   color: green;
   background-color: #f7f7f7;
   border-bottom: 3px solid rgb(64, 174, 248);

@@ -1,28 +1,74 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 body {
   width: 100%;
-  height: 1400px;
   margin: 0 auto;
-}
-
-.content{
-  max-width: 1500px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 120px;
-  padding: 10px;
-  background: white;
-  border: solid 2px #ffffff;
 }
 
 .top-menu {
   position: fixed;
   top: 0px;
   width: 100%;
-  height: 45px;
+  height: 40px;
   /* margin-left: 0;
   margin-top: 0; */
   background: white;
   padding: 10px;
+  box-sizing: content-box;
 }
 
+.content{
+  display: flex;
+  max-width: 1500px;
+  margin: 50px auto 2%;
+  padding: 50px;
+}
+
+.right-pane {
+  background-color: #fff;
+  padding: 25px;
+  border: 1px solid #eee;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+  width: 70%;
+  float: right;
+}
+
+/* .right-pane:hover{
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  margin-top: -5px;
+} */
+
+.left-pane {
+  /* position: fixed; */
+  align-items: left;
+  margin-top: 0;
+  width: 28%;
+  float: left;
+  /* background-color: rgb(170, 170, 170); */
+}
+
+@media screen and (max-width: 1280px) {
+  .content{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 50px 20px 10px;
+  }
+  .left-pane, .right-pane{
+    width: 100%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+}
+
+hr-divider {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
