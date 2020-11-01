@@ -30,11 +30,14 @@ body {
 
 .right-pane {
   background-color: #fff;
+  margin-left: 25px;
   padding: 25px;
-  border: 1px solid #eee;
+  border: 1px solid rgba(160,160,160,0.3);
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
-  width: 70%;
+  max-width: 70%;
+  width: 100%;
   float: right;
+  margin-top: 0;
 }
 
 /* .right-pane:hover{
@@ -43,12 +46,12 @@ body {
 } */
 
 .left-pane {
-  /* position: fixed; */
-  align-items: left;
   margin-top: 0;
-  width: 28%;
+  max-width: 28%;
   float: left;
-  /* background-color: rgb(170, 170, 170); */
+  top: 100px;
+  left: 0;
+  position: sticky;
 }
 
 @media screen and (max-width: 1280px) {
@@ -58,17 +61,8 @@ body {
     margin: 50px 20px 10px;
   }
   .left-pane, .right-pane{
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 2%;
     margin-top: 2%;
   }
-}
-
-hr-divider {
-  display: block;
-  width: 100%;
-  border-bottom: 1px solid black;
-  overflow: hidden;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
 }
