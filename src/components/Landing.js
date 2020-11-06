@@ -37,10 +37,11 @@ export default function Landing() {
           <Route exact path="/">
             <Redirect to="/home" />
           </Route>
-          <Route path="/home" component={Home} />
-          <Route path="/resume" component={Resume} />
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/resume" component={Resume} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          {/* <Route component={() => (<div>404 Not found </div>)} /> */}
         </div>
 
       </div>
