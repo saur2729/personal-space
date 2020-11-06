@@ -6,7 +6,7 @@ import Landing from './components/Landing'
 export default function App() {
   return (
     <div >
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter  basename={process.env.PUBLIC_URL}>
         <Landing />
       </HashRouter>
     </div>
