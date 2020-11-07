@@ -16,9 +16,7 @@ function Navbar() {
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>
-              <a className={item.cName} href={item.url} component={NavLink}>
-                {item.title}
-              </a>
+              <NavLink to={item.url}> {item.title} </NavLink>
             </li>
           )
         })}
