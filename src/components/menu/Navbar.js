@@ -4,13 +4,14 @@ import { NavLink } from "react-router-dom";
 import {MenuItems} from './MenuItems'
 
 import './Navbar.css'
+import hamMenu from '../../static/img/hm.png'
 
 function Navbar() {
   return (
     <nav className="NavbarItems">
       <div className="navbar-logo"> Saurabh Singh</div>
       <div className="menu-icon">
-
+        <img src={hamMenu} alt="" style={{height:"30px", marginTop:0, float:'right'}} />
       </div>
       <ul className='nav-menu'>
         {MenuItems.map((item, index) => {

@@ -34,6 +34,7 @@
   display: flex;
   align-items: center;
 }
+
 .left-email a{
   margin-top: 10px;
   font-family: "Raleway";
@@ -78,13 +79,33 @@
   }
 }
 
-.left-icons {
+.contact-icons {
   display: flex;
   align-items: center;
   flex-direction: row;
   margin-top: 20px;
 }
 
-.left-icons img{
+.contact-icons img{
   width: 5%;
+}
+
+.resume-main{
+  width: 100%;
+}
+
+.up-box {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid rgba(160,160,160,0.3);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+  margin-bottom: 20px;
+}
+
+.up-box li {
+  font-family: 'Montserrat', serif;
+  line-height: 1.5;
+  letter-spacing: .1em;
+  font-size: 14px;
+  margin: 10px
 }

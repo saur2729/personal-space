@@ -1,10 +1,6 @@
 import React from "react";
 
-import {Divider} from "../util/Util";
-import fb from '../../static/svg/fb.svg'
-import mail from '../../static/svg/mail.svg'
-import github from '../../static/svg/github.svg'
-import linkedin from '../../static/svg/linkedin.svg'
+import {Divider, ContactIcons} from "../util/Util";
 import "./Content.css";
 import myImg from "../../static/img/my_pic.png";
 
@@ -23,12 +19,7 @@ function LeftContent() {
           <a href="mailto:saur2706@gmail.com">saur2706@gmail.com</a>
         </div>
         <br />
-        <div className="left-icons">
-          <img alt="linkedin" src={linkedin} onClick={() => window.open('https://www.linkedin.com/in/saurabh-singh-377426ab/')}/>
-          <img alt="github" src={github} onClick={() => window.open('https://github.com/saur2729')} />
-          <img alt="fb" src={fb} style={{width:"3%"}} onClick={() => window.open('https://www.facebook.com/SaurabhzRule/') } />
-          <img alt="mail" src={mail} onClick={() => window.open("mailto:saur2706@gmail.com")} />
-        </div>
+        <ContactIcons />
       </div>
 
       <br />

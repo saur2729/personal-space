@@ -29,7 +29,7 @@
   margin-right: 11%;
 }
 
-ul li {
+ul.nav-menu li.nav-menu {
   display: inline-block;
   font-family: "Raleway",Helvetica,sans-serif;
   letter-spacing: .1em;
@@ -37,7 +37,7 @@ ul li {
   text-transform: uppercase;
 }
 
-ul li:not(:last-child):after {
+ul.nav-menu li:not(:last-child):after {
   content: "|";
   color:  rgba(160,160,160,0.3);
 }
@@ -56,13 +56,28 @@ ul li:not(:last-child):after {
   border-bottom: 3px solid rgb(64, 174, 248);
 }
 
+.menu-icon{
+  display: none;
+}
 
+@media screen and (max-width : 1280px)
+{
+  ul.nav-menu{
+    flex-direction: column;
+    display: none
+  }
 
+  .menu-icon{
+    display: block;
+    margin-right: 5%;
+    float: right;
 
+  }
 
-
-
-
+  img.menu-icon:focus + ul.nav-menu{
+    display: flex
+  }
+}
 
 
 

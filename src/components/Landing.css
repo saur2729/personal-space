@@ -6,7 +6,7 @@
 
 body {
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .top-menu {
@@ -19,21 +19,20 @@ body {
   background: white;
   padding: 10px;
   box-sizing: content-box;
+    border: 1px solid rgba(160,160,160,0.3);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
 }
 
 .content{
   display: flex;
   max-width: 1500px;
-  margin: 50px auto 2%;
+  margin: 50px 0 2%;
   padding: 50px;
 }
 
 .right-pane {
-  background-color: #fff;
   margin-left: 25px;
   padding: 25px;
-  border: 1px solid rgba(160,160,160,0.3);
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
   max-width: 70%;
   width: 100%;
   float: right;
@@ -48,6 +47,7 @@ body {
 .left-pane {
   margin-top: 0;
   max-width: 28%;
+  width: 100%;
   float: left;
   top: 100px;
   left: 0;
@@ -58,11 +58,18 @@ body {
   .content{
     display: flex;
     flex-direction: column-reverse;
-    margin: 50px 20px 10px;
+    margin: 50px 0px 10px;
+    padding: 25px;
   }
   .left-pane, .right-pane{
     max-width: 100%;
-    margin-bottom: 2%;
-    margin-top: 2%;
+    margin: 2% 0px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    padding: 0;
   }
 }
