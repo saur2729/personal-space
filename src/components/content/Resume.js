@@ -1,6 +1,6 @@
 import React from "react";
 
-import Timeline from "./timeline/Timeline";
+// import Timeline from "./timeline/Timeline";
 import { Divider, ResumeCard, TextChips, DegreeCard } from "../util/Util";
 
 import gs_logo from "../../static/img/gs.png";
@@ -13,9 +13,9 @@ import skills_logo from "../../static/img/skills.png";
 export default function Resume() {
   return (
     <div className="resume-main">
-      <div className="up-box">
+      {/* <div className="up-box">
         <Timeline />
-      </div>
+      </div> */}
       <h1 style={{color:"grey", margin:"20px 0 20px"}}>Professional Experience -</h1>
       <div className="up-box">
         <ResumeCard

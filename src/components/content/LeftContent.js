@@ -35,11 +35,12 @@ function LeftContent() {
           Capital. Before TRC I was at Goldman Sachs &amp; CITIBank(HCL
           payrolle). Also I'm pursuing MScFE from WQU.
         </p>
+        <br />
+        <Divider />
+        <br />
+        <span style={{fontSize:"12px", color:"#999"}}>Some CopyRight stuff - Oh! doesn't matter. Cheers!!</span>
       </div>
-      <br />
-      <Divider />
-      <br />
-      <span style={{fontSize:"5px", color:"#999"}}>Some CopyRight stuff - Oh! doesn't matter. Cheers!!</span>
+      
     </div>
   );
 }

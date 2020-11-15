@@ -19,20 +19,20 @@ body {
   background: white;
   padding: 10px;
   box-sizing: content-box;
-    border: 1px solid rgba(160,160,160,0.3);
+  border: 1px solid rgba(160,160,160,0.3);
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
 }
 
 .content{
   display: flex;
   max-width: 1500px;
-  margin: 50px 0 2%;
+  margin: 50px auto 2%;
   padding: 50px;
 }
 
 .right-pane {
   margin-left: 25px;
-  padding: 25px;
+  padding-left: 25px;
   max-width: 70%;
   width: 100%;
   float: right;
