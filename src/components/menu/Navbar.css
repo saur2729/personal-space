@@ -27,6 +27,8 @@
   text-align: center;
   justify-content: end;
   margin-right: 11%;
+  font-variant: small-caps;
+  letter-spacing: .1em;
 }
 
 ul.nav-menu li.nav-menu {
@@ -34,7 +36,7 @@ ul.nav-menu li.nav-menu {
   font-family: "Raleway",Helvetica,sans-serif;
   letter-spacing: .1em;
   font-size: 14px;
-  text-transform: uppercase;
+  font-variant: small-caps;
 }
 
 ul.nav-menu li:not(:last-child):after {
@@ -71,7 +73,6 @@ ul.nav-menu li:not(:last-child):after {
     display: block;
     margin-right: 5%;
     float: right;
-
   }
 
   img.menu-icon:focus + ul.nav-menu{

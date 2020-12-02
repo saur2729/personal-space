@@ -1,5 +1,6 @@
-import React, {useEffect, useState} from 'react'
+import React from "react";
 import { Route , Redirect} from "react-router-dom";
+
 
 import Navbar from './menu/Navbar'
 import LeftContent from './content/LeftContent'
@@ -9,31 +10,17 @@ import Resume from './content/Resume'
 import Contact from './content/Contact'
 import Projects from './content/Projects'
 import {Divider} from './util/Util'
+import "./Landing2.css";
 
-import './Landing.css'
-
-export default function Landing() {
-  const [screenSize, setscreenSize] = useState(window.innerWidth);
-  useEffect(() => {
-    window.addEventListener("resize", () => setscreenSize(window.innerWidth));
-  }, [])
-
+function Landing2() {
   return (
-    <div>
-      <div className="top-menu">
+    <div className="wrapper">
+      <div className="top-nav">
         <Navbar />
       </div>
-
-      <div className='content'>
-        <div className='left-pane'>
-          <LeftContent />
-        </div>
-
-        {
-          screenSize < 1280 &&
-          <Divider />
-        }
-        <div className='right-pane'>
+      <div className="main-content">
+        <div className="left-nav"><LeftContent /></div>
+        <div className="right-nav">
           <Route exact path="/">
             <Redirect to="/home" />
           </Route>
@@ -42,11 +29,10 @@ export default function Landing() {
           <Route path="/about" component={About} />
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
-          {/* <Route component={() => (<div>404 Not found </div>)} /> */}
         </div>
-
       </div>
-
     </div>
-  )
+  );
 }
+
+export default Landing2;

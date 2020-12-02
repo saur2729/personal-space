@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 import {Divider, ContactIcons} from "../util/Util";
 import "./Content.css";
@@ -8,9 +9,11 @@ function LeftContent() {
   return (
     <div className="left-content">
       <div>
-        <a className="left-logo" href="/">
+        {/* <a className="left-logo" href="/"> */}
+        <NavLink  className="left-logo" to="/home">
           <img className="left-logo-img" alt="Saurabh Singh" src={myImg} />
-        </a>
+        </NavLink>
+        {/* </a> */}
         <br />
         <div className="left-name-header">
           <h1>Saurabh Singh</h1>
@@ -35,12 +38,11 @@ function LeftContent() {
           Capital. Before TRC I was at Goldman Sachs &amp; CITIBank(HCL
           payrolle). Also I'm pursuing MScFE from WQU.
         </p>
-        <br />
         <Divider />
         <br />
         <span style={{fontSize:"12px", color:"#999"}}>Some CopyRight stuff - Oh! doesn't matter. Cheers!!</span>
       </div>
-      
+
     </div>
   );
 }

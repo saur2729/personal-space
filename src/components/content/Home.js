@@ -19,9 +19,14 @@ function Home() {
       Welcome to this space.
     </span>
     <Divider /> <br />
-    <span role="img">
-      Namaste <span role="img" aria-label="Namaste emoji">🙏</span>  <br />
-      Welcome to my page. Please feel to free to browse through the different menu tabs to know <NavLink to="/about"> about me</NavLink> and my career
+    <span
+      style={{
+        fontSize: "15px",
+        fontFamily: "'Montserrat', serif",
+        letterSpacing: ".1em",
+      }}>
+      Namaste <span role="img" aria-label="Namaste emoji">🙏</span>  <br /><br />
+      Welcome to my page. Please feel to free to browse through the different menu tabs to know <NavLink to="/about"> about me</NavLink> and my career.
       </span>
 
     <br />
