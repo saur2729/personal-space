@@ -55,6 +55,12 @@ flex-direction: column;
   font-size: 18px;
 }
 
+.contact-icons img:hover {
+  cursor: pointer;
+  transform: scale(2);
+  transition: 500ms;
+}
+
 @media screen and (max-width: 1280px) {
   .contact-icons{
     margin: 10px;

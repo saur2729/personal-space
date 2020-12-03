@@ -4,8 +4,8 @@
 
 .NavbarItems {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .navbar-logo {
@@ -64,8 +64,44 @@ ul.nav-menu li:not(:last-child):after {
 
 @media screen and (max-width : 1280px)
 {
+  .ham-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+    font-family: "Raleway",Helvetica,sans-serif;
+    letter-spacing: .1em;
+    font-size: 16px;
+    font-variant: small-caps;
+    background-color: white;
+  }
+
+  .ham-menu ul li {
+    list-style-type: none;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    /* To shift the li to left with ~0 margin */
+    position: relative;
+    left: -20px;
+  }
+
+  .ham-menu a:link, a:visited {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .ham-menu li:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 200ms;
+    background-color: rgba(211, 207, 207, 0.3);;
+  }
+
   ul.nav-menu{
-    flex-direction: column;
     display: none
   }
 
@@ -79,5 +115,3 @@ ul.nav-menu li:not(:last-child):after {
     display: flex
   }
 }
-
-

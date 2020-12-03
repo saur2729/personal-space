@@ -1,9 +1,25 @@
-import React from 'react'
-import {Divider, ContactIcons} from '../util/Util'
+import React, {useState} from 'react'
+import {Divider, ContactIcons, InputBox} from '../util/Util'
 
 import "./Content.css";
 
+
 function Contact() {
+  // const [state, setState] = useState({
+  //   name: "",
+  //   email: "",
+  //   sub: "",
+  //   msg: ""
+  // });
+  // const handleSubmit = data => alert(JSON.stringify(state));
+
+  // const handleChange = name => event => {
+  //   setState({
+  //     ...state,
+  //     [name]: event.target.value
+  //   });
+  // };
+
   return (
     <div className="up-box">
       <span style={{fontSize: "30px", fontFamily: "Raleway", letterSpacing: ".1em", color: "grey"}}>Contact Form</span>

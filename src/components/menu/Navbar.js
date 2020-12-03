@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import { NavLink } from "react-router-dom";
 
 import {MenuItems} from './MenuItems'
@@ -7,21 +7,55 @@ import './Navbar.css'
 import hamMenu from '../../static/img/hm.png'
 
 function Navbar() {
-  const clickSideBar = () => {
+  const wrapperRef = useRef(null);
+  // const [openHamMenu, setopenHamMenu] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
+
+  // below is the same as componentDidMount and componentDidUnmount
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside, false);
+    return () => {
+      document.removeEventListener("click", handleClickOutside, false);
+    };
+  }, []);
+
+  const handleClickOutside = event => {
+    if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+      setIsVisible(false);
+    }
+  };
+
+  const clickHamMenu = () => {
     return (
-      console.log("You clicked me")
+      setIsVisible(!isVisible)
     )
   }
+
   return (
     <nav className="NavbarItems">
       <div className="navbar-logo">
         <NavLink to="/" style={{textDecoration: "None"}}> Saurabh Singh </NavLink>
       </div>
-      <div className="menu-icon">
-        <img src={hamMenu} alt="" style={{height:"25px", marginTop:0, float:'right'}} onClick={clickSideBar} />
+      <div className="menu-icon" ref={wrapperRef}>
+        <img src={hamMenu} alt="" style={{height:"25px", marginTop:0, float:'right'}} onClick={clickHamMenu} />
+
+        {isVisible &&
+          <div className="ham-menu">
+            <ul>
+              {MenuItems.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <NavLink to={item.url}> {item.title} </NavLink>
+                  </li>
+                )
+              })}
+            </ul>
+
+          </div>
+        }
       </div>
 
-      <ul className='nav-menu'>
+      <ul className="nav-menu">
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>

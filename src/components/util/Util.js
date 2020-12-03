@@ -6,6 +6,7 @@ import mail from '../../static/svg/mail.svg'
 import github from '../../static/svg/github.svg'
 import linkedin from '../../static/svg/linkedin.svg'
 
+// import Mail from '../../static/svg/mail.svg'
 
 export function Divider() {
   // TODO : make changes to pass width, height and type(vertical, horizontal)
