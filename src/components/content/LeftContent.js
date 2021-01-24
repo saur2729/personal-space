@@ -9,11 +9,9 @@ function LeftContent() {
   return (
     <div className="left-content">
       <div>
-        {/* <a className="left-logo" href="/"> */}
         <NavLink  className="left-logo" to="/home">
           <img className="left-logo-img" alt="Saurabh Singh" src={myImg} />
         </NavLink>
-        {/* </a> */}
         <br />
         <div className="left-name-header">
           <h1>Saurabh Singh</h1>

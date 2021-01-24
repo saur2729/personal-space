@@ -1,10 +1,10 @@
 import React, {useState, useEffect, useRef} from 'react'
 import { NavLink } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
 
 import {MenuItems} from './MenuItems'
 
 import './Navbar.css'
-import hamMenu from '../../static/img/hm.png'
 
 function Navbar() {
   const wrapperRef = useRef(null);
@@ -37,7 +37,7 @@ function Navbar() {
         <NavLink to="/" style={{textDecoration: "None"}}> Saurabh Singh </NavLink>
       </div>
       <div className="menu-icon" ref={wrapperRef}>
-        <img src={hamMenu} alt="" style={{height:"25px", marginTop:0, float:'right'}} onClick={clickHamMenu} />
+        <FaBars size="25" onClick={clickHamMenu} />
 
         {isVisible &&
           <div className="ham-menu">

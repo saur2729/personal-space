@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import {Divider, ContactIcons, InputBox} from '../util/Util'
+import React from 'react'
+import {Divider, ContactIcons} from '../util/Util'
 
 import "./Content.css";
 
@@ -32,10 +32,12 @@ function Contact() {
         </a>
         &nbsp;, or you can also ping me on other platforms -
       </span>
-      <div style={{transform: "scale(0.5)"}}> <ContactIcons /> </div>
+      <br />
+      <div style={{maxWidth: "500px"}}> <ContactIcons /> </div>
 
     </div>
   )
 }
 
 export default Contact
+

@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from "react";
 
+import { FaFacebook, FaLinkedinIn, FaGithub, FaRegEnvelope } from 'react-icons/fa';
 import "./Util.css";
-import fb from '../../static/svg/fb.svg'
-import mail from '../../static/svg/mail.svg'
-import github from '../../static/svg/github.svg'
-import linkedin from '../../static/svg/linkedin.svg'
 
-// import Mail from '../../static/svg/mail.svg'
 
 export function Divider() {
   // TODO : make changes to pass width, height and type(vertical, horizontal)
@@ -81,11 +77,12 @@ export function TextChips(props) {
 export function ContactIcons() {
   return(
     <div className="contact-icons">
-      <img alt="linkedin" src={linkedin} onClick={() => window.open('https://www.linkedin.com/in/saurabh-singh-377426ab/')}/>
-      <img alt="github" src={github} onClick={() => window.open('https://github.com/saur2729')} />
-      <img alt="fb" src={fb} style={{width:"3%"}} onClick={() => window.open('https://www.facebook.com/SaurabhzRule/') } />
-      <img alt="mail" src={mail} onClick={() => window.open("mailto:saur2706@gmail.com")} />
+      <FaLinkedinIn className="contact-icons-list" color="#999" size="25px" onClick={() => window.open('https://www.linkedin.com/in/saurabh-singh-377426ab/')} />
+      <FaGithub className="contact-icons-list" color="#999" size="25px" onClick={() => window.open('https://github.com/saur2729')} />
+      <FaFacebook className="contact-icons-list" color="#999" size="25px" onClick={() => window.open('https://www.facebook.com/SaurabhzRule/')} />
+      <FaRegEnvelope className="contact-icons-list" color="#999" size="25px" onClick={() => window.open("mailto:saur2706@gmail.com")} />
   </div>
   )
 }
 export default { Divider, Age, ResumeCard, TextChips, ContactIcons, DegreeCard };
+

@@ -42,11 +42,12 @@ export default function Landing() {
           <Route path="/about" component={About} />
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
+          <Route exact path="*">
+            <Redirect to="/home" />
+          </Route>
           {/* <Route component={() => (<div>404 Not found </div>)} /> */}
         </div>
-
       </div>
-
     </div>
   )
 }

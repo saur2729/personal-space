@@ -38,15 +38,24 @@ flex-direction: column;
 
 .chip {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 20px;
   height: 30px;
   line-height: 30px;
   font-size: 14px;
   border-radius: 20px;
-  /* background-color: #f1f1f1; */
-  border: solid 1px rgba(21, 8, 139, 0.3);
-  color: rgba(54, 15, 126, 0.3);
+  border: solid 1px #60AFFE;
+  color: #60AFFE;
+  /* border: solid 1px rgba(21, 8, 139, 0.3); */
+  /* color: rgba(54, 15, 126, 0.3); */
   margin-left: 5px;
+}
+
+.chip:hover {
+  transform: scale(1.05);
+  transition: 200ms;
+  background-color: #007FFF;
+  color: white;
+  font-weight: bolder;
 }
 
 .rowTitle {
@@ -55,8 +64,9 @@ flex-direction: column;
   font-size: 18px;
 }
 
-.contact-icons img:hover {
+.contact-icons-list:hover {
   cursor: pointer;
+  color: black;
   transform: scale(2);
   transition: 500ms;
 }
@@ -64,7 +74,7 @@ flex-direction: column;
 @media screen and (max-width: 1280px) {
   .contact-icons{
     margin: 10px;
-    transform: scale(0.7);
+    /* transform: scale(0.7); */
 
   }
 }
